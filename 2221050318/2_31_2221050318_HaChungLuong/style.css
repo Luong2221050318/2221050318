@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.noidungtren {
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.form{
+    display: flex;
+}
+
+.trai{
+    width: 20%;
+}
+
+.giua{
+    width: 40%;
+}
+
+.phai{
+    width: 40%;
+}
+
+.benphai {
+    width:auto;
+    text-align: center;
+    padding: 10px;
+}
+.bentrai {
+    width:auto;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 1px solid blac    
+}
+
+.anh1 img {
+    padding: 30px 10px 30px 60px;
+    Width: 100%;
+    height:200px;
+    float: none;
+}
+
+
