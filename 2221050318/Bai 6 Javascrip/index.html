@@ -8,75 +8,79 @@
 </head>
 <body>
     <script>
-        document.writeln("Hello World" + "<br>");
-
-        // để khai báo 
-        //
-        let hoTen = ("Ha Chung Luong" + "<br>");
-
-        document.writeln(hoTen);
-
-        // let soThuNhat = 10;
-        // let soThuHai = 5;
-        // let ketQua = 0;
-
-        // Cộng (+); Trừ (-); Nhân (*); Chia(/)
-
-        // Tăng 1: ++
-        // Giảm 1: --
         
-        //ketQua = soThuNhat / soThuHai;
+        // let thongTinKhachHang = {
+        //     hoTen: "Tên Khách hàng",
+        //     soDienThoai: "0987654321",
+        //     thanhVienThanThiet: "false",
+        // }
+        // let thongTinDonHang = {
+        //     danhSachSanPham: {
+        //         sP01:
+        //             maSanPham: "Matcha123",
+        //             tenSanPham: "Trà Chanh",
+        //             soLuong: 10,
+        //             giaTien: 15000,
+        //         sP02:
+        //             maSanPham:"Matcha124",
+        //             tenSanPham: "Trà Sữa",
+        //             soLuong: 10,
+        //             giaTien: 25000,
+        //         sP03:
+        //             maSanPham: "Matcha125",
+        //             tenSanPham: "Cà Phê",
+        //             soLuong: 10,
+        //             giaTien: 20000,
+        //     }
+        // }
 
-        // soThuNhat + soThuHai = KQ => (soThuNhat += soThuHai);
-        //soThuNhat %= soThuHai;
+        // thanhToanThanhCong: "true";
+        // diaChiGiaoHang: "Đông Ngạc"
 
-        // let soThuNhat = 10;
-        // let soThuHai = 5;
-        // let ketQua = 0;
+        // let tongSP1 = thongTinDonHang.danhSachSanPham.sP01.giaTien * thongTinDonHang.danhSachSanPham.sP01.soLuong;
+        // let tongSP2 = thongTinDonHang.danhSachSanPham.sP02.giaTien * thongTinDonHang.danhSachSanPham.sP02.soLuong;
+        // let tongSP3 = thongTinDonHang.danhSachSanPham.sP03.giaTien * thongTinDonHang.danhSachSanPham.sP03.soLuong;
 
-        // == != True false; > < >= <= SD ở câu điều kiện
-        // === thỏa mãn giá trị
-        // !== phủ dịnh kết quả
+        // let tongTien= tongSP1 + tongSP2 + tongSP3;
 
-        let soThuNhat = 10;
-        let soThuHai = 5;
-        let ketQua = 0;
+        // document.writeln("Tổng tiền đơn hang = " + tongTien);
 
+        // var myString = "Hello Lương";
+        // document.writeln(myString.replace("Hello", "Hello,"));
+        
+        // var myString = "Hello Lương";
+        // document.writeln(myString.replace("Hello", "Hi"));
 
-        let thongTinSinhVien = {
-            hoTen: "Ha Chung Luong",
-            mssv: "2221050318",
-            gioiTinh: true,
-            tuoi: 21,
-            lop: "Đại học_Tin kinh tế_K67A"
-        }
+        // var myString = "Hello Lương";
+        // document.writeln(myString.toLowerCase()); //myString.toLowerCase() viết thường hết
 
-        let diaChi = {
-            thanhPho: "Lạng Sơn",
-            phuong: "Na Dương",
-            duong: "ABC",
-            sonha: 123
-        }
+        // var myString = "Hello";
+        // document.writeln(myString.indexOf("<br>" + 'e')); //trả ra vị trí xuất hiện đầu tiên
+        //                                                     // nếu có: vị trí, nếu không: -1
 
-        // thongTinSinhVien.diaChi=diaChiNhaBan;
+        // var myString = "Hello";
+        // document.writeln(myString.includes('e')); // nếu có: true, nếu không: false
 
-        document.writeln("Xin chào bạn: " + thongTinSinhVien.hoTen 
-            + " " + "tuổi" 
-            + thongTinSinhVien.tuoi 
-            + " " + "Nhà ở: " 
-            + " " + diaChi.thanhPho + "<br>"
-        );
-
-        let namNay = 2025;
-        document.writeln("Bạn " + thongTinSinhVien.hoTen 
-            + " Sinh năm "
-            + (namNay - thongTinSinhVien.tuoi)
-        );
+        // var myString = "Hello Lương";
+        // document.writeln(myString.split('l')); // tách chuỗi
 
 
+        //Mảng
+        // let danhSach = ["Nguyễn Văn Lợi", "Triệu Khanh Việt", "Phan Việt Anh", "Nguyễn Đình Hiệp"]
+        // document.writeln(danhSach)
 
-
-
+        //Chuỗi vẽ số
+        // let so = "123";
+        // document.writeln(typeof (so));
+        // document.writeln(typeof (Number(so))); //parselnt(); sô nguyên 
+                                                // parseFloat(); số thực
+                                                //pi.toFixed(2); lấy sau dấu chấm 2 số
+                                                //isNaN(NaN); KQ: true ktra có phải là NaN(Not-a-number)
+                                                //isFinite(10); KQ: true kiểm tra có phải số hứu hạn k
+        
+        let toDay = new Date();
+        document.writeln(toDay.getDate());
+        
     </script>
 </body>
 </html>
