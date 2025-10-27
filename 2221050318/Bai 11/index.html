@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 11</h1>
+    <!-- tạo hàm JS tính điểm của sinh viên dựa vào 3 điểm A, B, C
+    biết điểm tổng = A*0.6 + B*0.3 + c*0.1  -->
+    <h2>tính điểm</h2>
+    <div>
+        Điểm A: <input type="number" id="diemA" placeholder="Nhập điểm A">
+    </div>
+    <div>
+        Điểm B: <input type="number" id="diemB" placeholder="Nhập điểm B">
+    </div>
+    <div>
+        Điểm C: <input type="number" id="diemC" placeholder="Nhập điểm C">
+    </div>
+    <div>
+        <button onclick="xemKetQua">Tính điểm</button>
+    </div>
+    <div>
+        <!-- Kết Quả: <input type="text" id="ketqua"> -->
+         document.getE
+    </div>
+    <script>
+        function xemKetQua() {
+            let diemA = parseFloat.document.getElementById("diemA").value;
+            let diemB = parseFloat.document.getElementById("diemB").value;
+            let diemC = parseFloat.document.getElementById("diemC").value;
+
+            tinhDiem(diemA, diemB, diemC);
+        }
+        function tinhDiem(A, B, C) {
+            let tong;
+            if (kiemTra(A, B, C) == true) {
+                tong = A*0.6 + B*0.3 + c*0.1;
+                if (tong >= 9) {
+                    document.writeln("Điểm chữ là A+");
+                }
+                else if (tong >= 8.5 && tong < 9) {
+                    document.writeln("Điểm chữ là A");
+                }
+                else if (tong >= 8 && tong < 8.5) {
+                    document.writeln("Điểm chữ là B+");
+                }
+                else if (tong >= 7 && tong < 8) {
+                    document.writeln("Điểm chữ là B");
+                }
+                else if (tong >= 6.5 && tong < 7) {
+                    document.writeln("Điểm chữ là C+");
+                }
+                else if (tong >= 5.5 && tong < 6.5) {
+                    document.writeln("Điểm chữ là C");
+                }
+                else if (tong >= 5 && tong < 5.5) {
+                    document.writeln("Điểm chữ là D+");
+                }
+                else if (tong >= 4 && tong < 5) {
+                    document.writeln("Điểm chữ là D");
+                }
+                else if (tong < 4) {
+                    document.writeln("Điểm chữ là F");
+                }
+            }
+        }
+        
+        function kiemTra(A, B, C) {
+
+            if(A < 0 || A > 10 || typeof (A) != 'number') {
+                document.writeln("Điểm A không hợp lệ");
+                ketQua
+            }
+            if(B < 0 || B > 10 || typeof (B) != 'number') {
+                document.writeln("Điểm B không hợp lệ");
+            }
+            if(C < 0 || C > 10 || typeof (C) != 'number') {
+                document.writeln("Điểm C không hợp lệ");
+            }
+            return ketQua;
+            
+        }
+        let A = 10;
+        let B = 5 ;
+        let C = 10 ;
+        tinhDiem(A, B, C);
+    </script>
+</body>
+</html>

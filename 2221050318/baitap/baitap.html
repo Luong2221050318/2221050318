@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Chiều Cao: <input type="number" id="diemA" placeholder="Nhập chiều cao"> m
+    </div>
+    <div>
+        Cân Nặng: <input type="number" id="diemA" placeholder="Nhập cân nặng"> Kg
+    </div>
+    <div>
+        <button onclick="xemKetQua">Kiểm tra chỉ số BMI</button>
+    </div>
+    
+    <script>
+        function xemKetQua() {
+
+        }
+
+        function tinhBMI(A, B) {
+            if (kiemTra(A, B) == true) {
+                tong = B/(A*A);
+                if (tong >= 40) {
+                    document.writeln("Béo phì nặng");
+                }
+                else if (tong < 40 && tong >= 30 ) {
+                    document.writeln("Béo phì cấp độ 1-2");
+                }
+                else if (tong < 30 && tong >= 25) {
+                    document.writeln("Thừa cân");
+                }
+                else if (tong < 25 && tong >= 18.5) {
+                    document.writeln("Bình thường");
+                }
+                else if (tong < 18.5) {
+                    document.writeln("Thiếu cân");
+                }
+            }
+        
+        function kiemTra(A, B) {
+            
+        }
+
+        }
+    </script>
+</body>
+</html>
