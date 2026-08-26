@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <h1>Form tạo thông tin</h1>
+    <form>
+        <!-- Input nếu không truyền type thì Type mặc định là text -->
+         <div>
+            <p>Họ và tên</p> <input type="text" placeholder="Nhập tên">
+        </div>
+        <br>
+        <div>
+            <p>Giới thiệu bản thân</p> <textarea placeholder="Nhập giới thiệu"></textarea>
+        </div>
+        <br>
+        <div>
+            <p>Email</p> <input type="email" placeholder="Nhập email">
+        </div>
+        <br>
+        <div>
+            <p>Số điện thoại</p>
+            <!-- số đầu: 0
+            số tiếp: 9, 3, 6, 8
+            8 số cuối: 0-9 -->
+            <input 
+            type="tel" 
+            placeholder="Nhập số điện thoại"
+            required
+            pattern="([0]{1}(-[9, 3, 6, 8]){1})(-[-0-9]{8})"
+            title="Số điện thoại phải có 10 chữ số">
+        </div>
+        <br>
+        <div>
+            <p>Giới tính</p>
+            <input type="radio" name="gioitinh" value="nam"> Nam <br>
+            <input type="radio" name="gioitinh" value="nu"> Nữ
+        </div>
+        <br>
+        <div>
+            <p>Sở thích</p>
+            <input type="checkbox" name="sothich" value="docbao"> Đọc báo <br>
+            <input type="checkbox" name="sothich" value="xemphim"> Xem phim <br>
+            <input type="checkbox" name="sothich" value="nghe nhac"> Nghe nhạc<br>
+            <input type="checkbox" name="sothich" value="game"> Chơi game
+        </div>
+        <br>
+        <div>
+            <p>Quốc tịch</p>
+            <input list="browsers" name="browser" placeholder="Nhập quốc tịch">
+            <datalist id="browsers">
+                <option value="vietnam">Việt Nam</option>
+                <option value="laos">Lào</option>
+                <option value="cambodia">Campuchia</option>
+                <option value="thailand">Thái Lan</option>
+            </datalist>
+
+            <select name="browsers">
+                <option value="vietnam">Việt Nam</option>
+                <option value="laos">Lào</option>
+                <option value="cambodia">Campuchia</option>
+                <option value="thailand">Thái Lan</option>
+            </select>
+        </div>
+        <div>
+            <iframe width="1059" height="595" src="https://www.youtube.com/embed/awifvoH5I_M" title="[Review Phim] Người Nhện - Khởi Đầu Mới (2026) - Spiderman Đột Biến Gien Chiến Hulk Siêu Cuồng Bạo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            0 <input type="range" min="0" max="100"> 100
+        </div>
+        <div>
+            <input type="submit" value="Gửi">
+            <button>Submit</button>
+            <input type="reset" value="Reset">
+        </div>
+         <MARQUEE>
+                <img src="/Anh/fcb.png" width="80%" height="80%"> 
+        </MARQUEE>  
+        
+    </form>
+</body>
+</html>
