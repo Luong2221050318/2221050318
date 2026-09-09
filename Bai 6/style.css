@@ -1,0 +1,27 @@
+.khoi1 {
+    background-color:red;
+    
+}
+.khoi2 {
+    background-color:blue;
+    margin: 50px 200px;
+    padding:100px;
+    font-size: 30px;
+}
+.khoi3 {
+    background-color:green;
+}
+
+.khoi4 {
+    background-color:yellow;
+    display: flex;
+}
+.khoi5 {
+    background-color:orange;
+   width: 50%;
+}
+.khoi6 {
+    background-color:purple;
+    width: 50%;
+    
+}
