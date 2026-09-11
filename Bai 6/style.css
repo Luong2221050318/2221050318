@@ -4,9 +4,8 @@
 }
 .khoi2 {
     background-color:blue;
-    margin: 50px 200px;
-    padding:100px;
-    font-size: 30px;
+    margin: auto   ;
+    width: 100px
 }
 .khoi3 {
     background-color:green;
