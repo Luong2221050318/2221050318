@@ -8,9 +8,12 @@ body{
     list-style: none;
     display: flex;
     gap: 20px;
+    
 }
 .danh-muc{
     background-color: #198cf0;
+    width: 100%;
+    height: 5vh;
 }
 .lien-ket{
     color: white;
@@ -31,9 +34,15 @@ main{
 }
 
 .khoi-dang-nhap{
-    background-color: #198cf0;
+    background-color:white;
     width: 100%;
     height: 300px;
+}
+.trang-chu{
+    background-color: #bad7f1;
+    width: 100%;
+    height:30px;
+
 }
 
 form{
@@ -70,8 +79,73 @@ button{
 
 .phai {
     width: 80%;
+    padding: 14px;
     
 }
-.tin{
+
+.tieu-de{
+    margin-bottom: 25px;
+    padding: 10px 12px;
+    border: 1px solid #36aaf0;
+    border-radius: 11px;
+    box-shadow: 0 2px 4px #aaa;
+}
+
+.td{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #46aeeb;
+  height:4vh;
+}
+
+.danh-sach-bai{
+  display:flex;
+  justify-content:space-around;
+}
+.chi-tiet-bai{
+  width: 25%;
+  padding: 20px;
+}
+.anh-bai {
+  width: 100%;
+  border-radius: 10px 10px;
+  height: 20vh;
+  object-fit: cover;
+}
+.ngay{
+    text-align:right;
+}
+.ngay-dang{
+  text-align:right;
+  padding-top: 30px;
+  
+}
+
+.ds-bai{
+    display:flex;
+    justify-content:space-around;
+}
+.ds-bai-1{
+    display:flex;
+}
+.ct-bai{
+    width: 50%;
+    padding: 20px;
+}
+.ct-tin-tuc{
+    width: 95%;
+    margin: 20px;
     
 }
+.tintuc{
+    display:flex;
+    width:100%;
+    border-bottom: 1px solid #b7bcbe;
+}
+
+.td-bai{
+    padding: 0.5rem;
+    
+}
+
