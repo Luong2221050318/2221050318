@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+    
+</head>
+<body>
+    <script>
+        document.writeln("Hello World <br>");
+
+        // khai báo biến
+        var name = "Chung Lương <br>";
+        document.writeln(name);
+
+        name = "Hồng Nga <br>"
+        document.writeln(name);
+
+        var year = 2025;
+        document.writeln(year);
+
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        var ketQua = 0;
+        document.write("<br>Kết quả = ");
+        ketQua = soThuNhat - soThuHai;
+        document.writeln(ketQua);
+
+        document.writeln("<br>");
+        document.writeln(++soThuNhat);
+
+        soThuNhat += soThuHai;
+        document.writeln(soThuNhat);
+
+        var ho = "Lê Thị";
+        document.writeln( "<br>" + ho + " " + name);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+
+        var hoVaTen = "Ha Chung Luong";
+        document.writeln(hoVaTen.indexOf("H"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.includes("a"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.startswith("Ha"));
+        document.writeln("<br>");
+        document.writeln(hoVaTen.replace("Ha","Le"));
+
+        document.writeln("<br>");
+        document.writeln(hoVaTen.toUpperCase());
+
+        document.writeln("<br>");
+        document.writeln(hoVaTen.toLowerCase());
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
