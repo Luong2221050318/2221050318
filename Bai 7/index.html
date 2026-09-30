@@ -8,51 +8,117 @@
 </head>
 <body>
     <script>
-        document.writeln("Hello World <br>");
+        // document.writeln("Hello World <br>");
 
-        // khai báo biến
-        var name = "Chung Lương <br>";
-        document.writeln(name);
+        // // khai báo biến
+        // var name = "Chung Lương <br>";
+        // document.writeln(name);
 
-        name = "Hồng Nga <br>"
-        document.writeln(name);
+        // name = "Hồng Nga <br>"
+        // document.writeln(name);
 
-        var year = 2025;
-        document.writeln(year);
+        // var year = 2025;
+        // document.writeln(year);
 
-        var soThuNhat = 10;
-        var soThuHai = 5;
-        var ketQua = 0;
-        document.write("<br>Kết quả = ");
-        ketQua = soThuNhat - soThuHai;
-        document.writeln(ketQua);
+        // var soThuNhat = 10;
+        // var soThuHai = 5;
+        // var ketQua = 0;
+        // document.write("<br>Kết quả = ");
+        // ketQua = soThuNhat - soThuHai;
+        // document.writeln(ketQua);
 
-        document.writeln("<br>");
-        document.writeln(++soThuNhat);
+        // document.writeln("<br>");
+        // document.writeln(++soThuNhat);
 
-        soThuNhat += soThuHai;
-        document.writeln(soThuNhat);
+        // soThuNhat += soThuHai;
+        // document.writeln(soThuNhat);
 
-        var ho = "Lê Thị";
-        document.writeln( "<br>" + ho + " " + name);
-        document.writeln("<br>");
-        document.writeln(ho.length);
+        // var ho = "Lê Thị";
+        // document.writeln( "<br>" + ho + " " + name);
+        // document.writeln("<br>");
+        // document.writeln(ho.length);
 
-        var hoVaTen = "Ha Chung Luong";
-        document.writeln(hoVaTen.indexOf("H"));
-        document.writeln("<br>");
-        document.writeln(hoVaTen.includes("a"));
-        document.writeln("<br>");
-        document.writeln(hoVaTen.startswith("Ha"));
-        document.writeln("<br>");
-        document.writeln(hoVaTen.replace("Ha","Le"));
+        // var hoVaTen = "Ha Chung Luong";
+        // document.writeln(hoVaTen.indexOf("H"));
+        // document.writeln("<br>");
+        // document.writeln(hoVaTen.includes("a"));
+        // document.writeln("<br>");
+        // document.writeln(hoVaTen.startswith("Ha"));
+        // document.writeln("<br>");
+        // document.writeln(hoVaTen.replace("Ha","Le"));
 
-        document.writeln("<br>");
-        document.writeln(hoVaTen.toUpperCase());
+        // document.writeln("<br>");
+        // document.writeln(hoVaTen.toUpperCase());
 
-        document.writeln("<br>");
-        document.writeln(hoVaTen.toLowerCase());
+        // document.writeln("<br>");
+        // document.writeln(hoVaTen.toLowerCase());
 
+        var homNay = new Date();
+        var namNay = homNay.getFullYear();
+        var thangNay = homNay.getMonth() + 1; // getMonth() trả về 0–11
+        var ngayHomNay = homNay.getDate();
+
+        var thuTrongTuan = [
+            "Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư",
+            "Thứ năm", "Thứ sáu", "Thứ bảy"
+        ];
+
+        document.writeln("Hôm nay là " + thuTrongTuan[homNay.getDay()]);
+        document.writeln(", ngày " + ngayHomNay);
+        document.writeln(" tháng " + thangNay + " năm " + namNay + "<br>");
+
+        // Ngày 8 tháng 6 năm 2025 (tháng trong Date bắt đầu từ 0)
+        var ngay = new Date(2025, 5, 8);
+        document.writeln("Ngày đã chọn: " + ngay.toLocaleDateString("vi-VN") + "<br>");
+
+        // Mảng
+        var mang = [1, 2, 3, 4, 5];
+        document.writeln("Phần tử thứ ba: " + mang[2] + "<br>");
+        document.writeln("Độ dài mảng: " + mang.length + "<br>");
+
+        var mangTen = ["Đức", "Thái", "Lương"];
+        document.writeln("Tên cuối: " + mangTen[2] + "<br>");
+
+        var mangTenDayDu = [1, 2, 3, 4, 5, "Đức", "Thái", "Lương"];
+        var d = mang.concat(mang, mangTenDayDu);
+        document.writeln(d.join("-") + "<br>");
+
+        d.push("Đức");
+        document.writeln("Mảng đảo ngược: " + mang.slice().reverse().join(", ") + "<br>");
+
+        // Object
+        var thongTinSinhVien = {
+            ten: "Ha Chung Luong",
+            namSinh: 2004,
+            queQuan: {
+                thanhPho: "Lang Son",
+                phuong: "San Vien"
+            }
+        };
+
+        thongTinSinhVien.tuoi = namNay - thongTinSinhVien.namSinh;
+        document.writeln("Quê quán: " + thongTinSinhVien.queQuan.thanhPho + "<br>");
+        document.writeln("Tuổi: " + thongTinSinhVien.tuoi);
+
+        //== != ><
+        // === so sánh cả giá trị và kiểu dữ liệu
+        // var so1 = 10;
+        // var so2 = "10";
+        // document.writeln("<br>");
+        // document.writeln(so1 == so2);
+
+        var thu = homNay.getDay();
+
+        if (thu === 0) {
+            document.writeln("Cuối tuần");
+        } else if (thu === 6) {
+            document.writeln("Sắp được ngủ");
+        } else {
+            document.writeln("Đi học");
+        }
+        var so = 5;
+        //kiểm tra chắn lẻ
+        //
     </script>
     <script src="script.js"></script>
 </body>
