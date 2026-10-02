@@ -99,6 +99,7 @@
         thongTinSinhVien.tuoi = namNay - thongTinSinhVien.namSinh;
         document.writeln("Quê quán: " + thongTinSinhVien.queQuan.thanhPho + "<br>");
         document.writeln("Tuổi: " + thongTinSinhVien.tuoi);
+        document.writeln("<br>");
 
         //== != ><
         // === so sánh cả giá trị và kiểu dữ liệu
@@ -110,15 +111,109 @@
         var thu = homNay.getDay();
 
         if (thu === 0) {
+            
             document.writeln("Cuối tuần");
         } else if (thu === 6) {
             document.writeln("Sắp được ngủ");
         } else {
             document.writeln("Đi học");
         }
+
         var so = 5;
-        //kiểm tra chắn lẻ
-        //
+        // kiểm tra chẵn lẻ
+        if (so % 2 === 0) {
+            document.writeln("<br>");
+            document.writeln("Số chẵn");
+        } else {
+            document.writeln("Số lẻ");
+        }
+
+        //số quá lớn
+        var so = 200000000000001;
+        var doDai = so.length;
+        var soCuoiCung = so[doDai-1];
+        document.writeln("<br>");
+        document.writeln(soCuoiCung);
+        if(soCuoiCung % 2 == 0){
+            document.writeln(so + " là số chẵn");
+        } else {
+            document.writeln(so + " là số lẻ");
+        }
+
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 0:
+                document.writeln("<br>Hôm nay là Chủ nhật");
+                break;
+            case 1:
+                document.writeln("<br>Hôm nay là Thứ hai");
+                break;
+            case 2:
+                document.writeln("<br>Hôm nay là Thứ ba");
+                break;
+            case 3:
+                document.writeln("<br>Hôm nay là Thứ tư");
+                break;
+            case 4:
+                document.writeln("<br>Hôm nay là Thứ năm");
+                break;
+            case 5:
+                document.writeln("<br>Hôm nay là Thứ sáu");
+                break;
+            case 6:
+                document.writeln("<br>Hôm nay là Thứ bảy");
+                break;
+            case 7:
+                document.writeln("<br>Hôm nay là Chủ nhật");
+                break;
+            default:
+                document.writeln("Ngày không hợp lệ");
+        }
+
+        // for (var index = 1; index <= 1000; index++) {
+        //     document.writeln("<br>");
+        //     document.writeln("I'm so Sorry " + index);
+        // }
+ 
+        for (var i = 0; i < mangTen.length; i++) {
+            document.writeln("<br>");
+            document.writeln("Tên thứ " + (i + 1) + ": " + mangTen[i]);
+        }
+
+        //while
+        var i = 0;
+        while (i <= 10){
+            document.writeln("<br>");
+            document.writeln("the number is " + i);
+            i = i + 1;
+        }
+
+        //do while
+        var j = 0;
+        do {
+            document.writeln("<br>");
+            document.writeln("the number is " + j);
+            j = j + 1;
+        } while (j <= 10);
+
+
+        //popup boxes
+        alert("Xin chào bạn!");
+        var r = confirm("Bạn có muốn tiếp tục không?");
+        if (r == true) {
+            document.writeln("<br>");
+            document.writeln("Bạn đã chọn tiếp tục");
+        } else {
+            document.writeln("<br>");
+            document.writeln("Bạn đã chọn hủy bỏ");
+        }
+        var name = prompt("Vui lòng nhập tên của bạn:", "Tên của bạn");
+        document.writeln("<br>");
+        document.writeln("Tên của bạn là: " + name);
+
+
+
     </script>
     <script src="script.js"></script>
 </body>

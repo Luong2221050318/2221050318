@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <script>
+        //fucntion
+        function sayHello(){
+            document.writeln("Xin chào các bạn <br>");
+        }
+        sayHello();
+
+        function sayHello2(ten){
+            document.write("Xin chào " + ten + "<br>");
+
+        }
+        sayHello2("Hà Chung Lương");
+
+        
+        function so(a,b){
+            a = Number(a);
+            b = Number(b);
+            if (!isNaN(a) && !isNaN(b)) {
+                document.write("Tổng là: " + (a + b) + "<br>");
+            } else {
+                document.write("Vui lòng nhập số hợp lệ!<br>");
+            }
+        }
+        var soThuNhat = prompt("Nhập số thứ nhất: ");
+        var soThuHai = prompt("Nhập số thứ hai: ");
+        so(soThuNhat, soThuHai);
+    </script>
+</body>
+</html>
